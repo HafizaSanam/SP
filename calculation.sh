@@ -22,6 +22,21 @@ then
 		echo 'Wrong Input'
 	fi
 fi
+if [ $# != 0 ]
+then
+		echo 'Sum is:' `expr $1 + $2`
+		echo 'Product is:' `expr $1 \* $2`
+		echo 'Difference is:' `expr $1 - $2`
+	   	if [ $2 = 0 ]
+		then
+			echo 'Wrong input'
+		fi
+		if [ $2 != 0 ]
+		then
+		echo 'Division is:' `expr $1 / $2`
+		fi
+		echo 'Mod is: ' `expr $1 % $2`		
+fi
 
 
 
